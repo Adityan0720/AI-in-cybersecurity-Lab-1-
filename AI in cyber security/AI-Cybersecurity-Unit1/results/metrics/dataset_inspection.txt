@@ -1,0 +1,147 @@
+NSL-KDD KDDTrain+.txt Dataset Inspection
+=============================================
+Source file: data/KDDTrain+.txt
+Delimiter: comma (,)
+Header row present: no; standard NSL-KDD column names applied
+Shape: 125973 rows x 43 columns
+Number of features excluding target and difficulty_level: 41
+
+Columns:
+duration, protocol_type, service, flag, src_bytes, dst_bytes, land, wrong_fragment, urgent, hot, num_failed_logins, logged_in, num_compromised, root_shell, su_attempted, num_root, num_file_creations, num_shells, num_access_files, num_outbound_cmds, is_host_login, is_guest_login, count, srv_count, serror_rate, srv_serror_rate, rerror_rate, srv_rerror_rate, same_srv_rate, diff_srv_rate, srv_diff_host_rate, dst_host_count, dst_host_srv_count, dst_host_same_srv_rate, dst_host_diff_srv_rate, dst_host_same_src_port_rate, dst_host_srv_diff_host_rate, dst_host_serror_rate, dst_host_srv_serror_rate, dst_host_rerror_rate, dst_host_srv_rerror_rate, label, difficulty_level
+
+First 5 rows:
+ duration protocol_type  service flag  src_bytes  dst_bytes  land  wrong_fragment  urgent  hot  num_failed_logins  logged_in  num_compromised  root_shell  su_attempted  num_root  num_file_creations  num_shells  num_access_files  num_outbound_cmds  is_host_login  is_guest_login  count  srv_count  serror_rate  srv_serror_rate  rerror_rate  srv_rerror_rate  same_srv_rate  diff_srv_rate  srv_diff_host_rate  dst_host_count  dst_host_srv_count  dst_host_same_srv_rate  dst_host_diff_srv_rate  dst_host_same_src_port_rate  dst_host_srv_diff_host_rate  dst_host_serror_rate  dst_host_srv_serror_rate  dst_host_rerror_rate  dst_host_srv_rerror_rate   label  difficulty_level
+        0           tcp ftp_data   SF        491          0     0               0       0    0                  0          0                0           0             0         0                   0           0                 0                  0              0               0      2          2          0.0              0.0          0.0              0.0           1.00           0.00                0.00             150                  25                    0.17                    0.03                         0.17                         0.00                  0.00                      0.00                  0.05                      0.00  normal                20
+        0           udp    other   SF        146          0     0               0       0    0                  0          0                0           0             0         0                   0           0                 0                  0              0               0     13          1          0.0              0.0          0.0              0.0           0.08           0.15                0.00             255                   1                    0.00                    0.60                         0.88                         0.00                  0.00                      0.00                  0.00                      0.00  normal                15
+        0           tcp  private   S0          0          0     0               0       0    0                  0          0                0           0             0         0                   0           0                 0                  0              0               0    123          6          1.0              1.0          0.0              0.0           0.05           0.07                0.00             255                  26                    0.10                    0.05                         0.00                         0.00                  1.00                      1.00                  0.00                      0.00 neptune                19
+        0           tcp     http   SF        232       8153     0               0       0    0                  0          1                0           0             0         0                   0           0                 0                  0              0               0      5          5          0.2              0.2          0.0              0.0           1.00           0.00                0.00              30                 255                    1.00                    0.00                         0.03                         0.04                  0.03                      0.01                  0.00                      0.01  normal                21
+        0           tcp     http   SF        199        420     0               0       0    0                  0          1                0           0             0         0                   0           0                 0                  0              0               0     30         32          0.0              0.0          0.0              0.0           1.00           0.00                0.09             255                 255                    1.00                    0.00                         0.00                         0.00                  0.00                      0.00                  0.00                      0.00  normal                21
+
+Data types:
+  duration: int64
+  protocol_type: str
+  service: str
+  flag: str
+  src_bytes: int64
+  dst_bytes: int64
+  land: int64
+  wrong_fragment: int64
+  urgent: int64
+  hot: int64
+  num_failed_logins: int64
+  logged_in: int64
+  num_compromised: int64
+  root_shell: int64
+  su_attempted: int64
+  num_root: int64
+  num_file_creations: int64
+  num_shells: int64
+  num_access_files: int64
+  num_outbound_cmds: int64
+  is_host_login: int64
+  is_guest_login: int64
+  count: int64
+  srv_count: int64
+  serror_rate: float64
+  srv_serror_rate: float64
+  rerror_rate: float64
+  srv_rerror_rate: float64
+  same_srv_rate: float64
+  diff_srv_rate: float64
+  srv_diff_host_rate: float64
+  dst_host_count: int64
+  dst_host_srv_count: int64
+  dst_host_same_srv_rate: float64
+  dst_host_diff_srv_rate: float64
+  dst_host_same_src_port_rate: float64
+  dst_host_srv_diff_host_rate: float64
+  dst_host_serror_rate: float64
+  dst_host_srv_serror_rate: float64
+  dst_host_rerror_rate: float64
+  dst_host_srv_rerror_rate: float64
+  label: str
+  difficulty_level: int64
+
+Missing values by column:
+  duration: 0
+  protocol_type: 0
+  service: 0
+  flag: 0
+  src_bytes: 0
+  dst_bytes: 0
+  land: 0
+  wrong_fragment: 0
+  urgent: 0
+  hot: 0
+  num_failed_logins: 0
+  logged_in: 0
+  num_compromised: 0
+  root_shell: 0
+  su_attempted: 0
+  num_root: 0
+  num_file_creations: 0
+  num_shells: 0
+  num_access_files: 0
+  num_outbound_cmds: 0
+  is_host_login: 0
+  is_guest_login: 0
+  count: 0
+  srv_count: 0
+  serror_rate: 0
+  srv_serror_rate: 0
+  rerror_rate: 0
+  srv_rerror_rate: 0
+  same_srv_rate: 0
+  diff_srv_rate: 0
+  srv_diff_host_rate: 0
+  dst_host_count: 0
+  dst_host_srv_count: 0
+  dst_host_same_srv_rate: 0
+  dst_host_diff_srv_rate: 0
+  dst_host_same_src_port_rate: 0
+  dst_host_srv_diff_host_rate: 0
+  dst_host_serror_rate: 0
+  dst_host_srv_serror_rate: 0
+  dst_host_rerror_rate: 0
+  dst_host_srv_rerror_rate: 0
+  label: 0
+  difficulty_level: 0
+
+Total missing values: 0
+Duplicate rows: 0
+
+Target column: label
+Target meaning: the original NSL-KDD event label. 'normal' represents normal network activity; other values represent named attack types.
+Unique target values:
+back, buffer_overflow, ftp_write, guess_passwd, imap, ipsweep, land, loadmodule, multihop, neptune, nmap, normal, perl, phf, pod, portsweep, rootkit, satan, smurf, spy, teardrop, warezclient, warezmaster
+
+Target/class distribution:
+  normal: 67343
+  neptune: 41214
+  satan: 3633
+  ipsweep: 3599
+  portsweep: 2931
+  smurf: 2646
+  nmap: 1493
+  back: 956
+  teardrop: 892
+  warezclient: 890
+  pod: 201
+  guess_passwd: 53
+  buffer_overflow: 30
+  warezmaster: 20
+  land: 18
+  imap: 11
+  rootkit: 10
+  loadmodule: 9
+  ftp_write: 8
+  multihop: 7
+  phf: 4
+  perl: 3
+  spy: 2
+
+Numerical features:
+duration, src_bytes, dst_bytes, land, wrong_fragment, urgent, hot, num_failed_logins, logged_in, num_compromised, root_shell, su_attempted, num_root, num_file_creations, num_shells, num_access_files, num_outbound_cmds, is_host_login, is_guest_login, count, srv_count, serror_rate, srv_serror_rate, rerror_rate, srv_rerror_rate, same_srv_rate, diff_srv_rate, srv_diff_host_rate, dst_host_count, dst_host_srv_count, dst_host_same_srv_rate, dst_host_diff_srv_rate, dst_host_same_src_port_rate, dst_host_srv_diff_host_rate, dst_host_serror_rate, dst_host_srv_serror_rate, dst_host_rerror_rate, dst_host_srv_rerror_rate, difficulty_level
+
+Categorical features:
+protocol_type, service, flag, label
